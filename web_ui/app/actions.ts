@@ -5,6 +5,7 @@ import { exec } from 'child_process';
 import { promisify } from 'util';
 import path from 'path';
 import { unlink } from 'fs/promises';
+import { existsSync } from 'fs';
 
 const execAsync = promisify(exec);
 const ENGINE_TIMEOUT_MS = 10_000; // 10s hard limit -- engine normally runs in <50ms
@@ -123,7 +124,24 @@ export async function runEngine(formData: FormData) {
 
     // Establish absolute path metrics relative to Next.js server working directory
     const jsonPath = path.join(process.cwd(), '..', 'data', 'user_input.json');
-    const exePath = path.join(process.cwd(), '..', 'build', 'DroneEngine.exe');
+    
+    // Resolve the compiled binary path dynamically across OS configurations (Windows, Linux, macOS)
+    const isWindows = process.platform === 'win32';
+    const binaryName = isWindows ? 'DroneEngine.exe' : 'DroneEngine';
+    const candidates = [
+      path.join(process.cwd(), '..', 'build', binaryName),
+      path.join(process.cwd(), '..', 'build', 'Release', binaryName),
+      path.join(process.cwd(), '..', 'build', 'Debug', binaryName),
+      path.join(process.cwd(), '..', binaryName),
+    ];
+    let exePath = candidates[0];
+    for (const candidate of candidates) {
+      if (existsSync(candidate)) {
+        exePath = candidate;
+        break;
+      }
+    }
+    
     const engineCwd = path.join(process.cwd(), '..');
     const outputPath = path.join(process.cwd(), '..', 'data', 'sizing_output.json');
 
