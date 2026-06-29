@@ -1,0 +1,136 @@
+{
+    "chemistries": [
+        {
+            "name": "Li-ion NCA",
+            "e_spec_max_wh_kg": 260,
+            "p_spec_max_w_kg": 1500,
+            "r_i_base_ohms": 0.02,
+            "v_full_cell": 4.2,
+            "v_nom_cell": 3.6,
+            "v_exp_cell": 3.9,
+            "tremblay_exp_rate": 12,
+            "tremblay_polarization_coeff": 0.04
+        },
+        {
+            "name": "LiPo",
+            "e_spec_max_wh_kg": 180,
+            "p_spec_max_w_kg": 3500,
+            "r_i_base_ohms": 0.005,
+            "v_full_cell": 4.2,
+            "v_nom_cell": 3.7,
+            "v_exp_cell": 3.9,
+            "tremblay_exp_rate": 5.5,
+            "tremblay_polarization_coeff": 0.046
+        },
+        {
+            "name": "LiHV",
+            "e_spec_max_wh_kg": 195,
+            "p_spec_max_w_kg": 3800,
+            "r_i_base_ohms": 0.004,
+            "v_full_cell": 4.35,
+            "v_nom_cell": 3.8,
+            "v_exp_cell": 4,
+            "tremblay_exp_rate": 10,
+            "tremblay_polarization_coeff": 0.04
+        },
+        {
+            "name": "Li-ion NMC",
+            "e_spec_max_wh_kg": 240,
+            "p_spec_max_w_kg": 1800,
+            "r_i_base_ohms": 0.015,
+            "v_full_cell": 4.2,
+            "v_nom_cell": 3.6,
+            "v_exp_cell": 3.8,
+            "tremblay_exp_rate": 8,
+            "tremblay_polarization_coeff": 0.06
+        },
+        {
+            "name": "Solid State",
+            "e_spec_max_wh_kg": 400,
+            "p_spec_max_w_kg": 1200,
+            "r_i_base_ohms": 0.035,
+            "v_full_cell": 4.2,
+            "v_nom_cell": 3.6,
+            "v_exp_cell": 3.9,
+            "tremblay_exp_rate": 15,
+            "tremblay_polarization_coeff": 0.03
+        },
+        {
+            "name": "Li-S",
+            "e_spec_max_wh_kg": 500,
+            "p_spec_max_w_kg": 800,
+            "r_i_base_ohms": 0.05,
+            "v_full_cell": 2.45,
+            "v_nom_cell": 2.1,
+            "v_exp_cell": 2.3,
+            "tremblay_exp_rate": 5,
+            "tremblay_polarization_coeff": 0.1
+        },
+        {
+            "name": "LiPo_standard",
+            "e_spec_max_wh_kg": 180,
+            "p_spec_max_w_kg": 3500,
+            "r_i_base_ohms": 0.005,
+            "v_full_cell": 4.2,
+            "v_nom_cell": 3.7,
+            "v_exp_cell": 3.9,
+            "tremblay_exp_rate": 5.5,
+            "tremblay_polarization_coeff": 0.046
+        },
+        {
+            "name": "LiPo_highvoltage",
+            "e_spec_max_wh_kg": 220,
+            "p_spec_max_w_kg": 3500,
+            "r_i_base_ohms": 0.004,
+            "v_full_cell": 4.35,
+            "v_nom_cell": 3.8,
+            "v_exp_cell": 4,
+            "tremblay_exp_rate": 6,
+            "tremblay_polarization_coeff": 0.04
+        },
+        {
+            "name": "LiPo_premium",
+            "e_spec_max_wh_kg": 250,
+            "p_spec_max_w_kg": 3500,
+            "r_i_base_ohms": 0.003,
+            "v_full_cell": 4.4,
+            "v_nom_cell": 3.85,
+            "v_exp_cell": 4.1,
+            "tremblay_exp_rate": 6.5,
+            "tremblay_polarization_coeff": 0.038
+        },
+        {
+            "name": "LiPo_consumer",
+            "e_spec_max_wh_kg": 230,
+            "p_spec_max_w_kg": 3500,
+            "r_i_base_ohms": 0.0035,
+            "v_full_cell": 4.4,
+            "v_nom_cell": 3.8,
+            "v_exp_cell": 4.05,
+            "tremblay_exp_rate": 6.5,
+            "tremblay_polarization_coeff": 0.04
+        },
+        {
+            "name": "LiPo_enterprise",
+            "e_spec_max_wh_kg": 240,
+            "p_spec_max_w_kg": 3500,
+            "r_i_base_ohms": 0.004,
+            "v_full_cell": 4.3,
+            "v_nom_cell": 3.75,
+            "v_exp_cell": 3.95,
+            "tremblay_exp_rate": 6,
+            "tremblay_polarization_coeff": 0.045
+        },
+        {
+            "name": "LiPo_agricultural",
+            "e_spec_max_wh_kg": 160,
+            "p_spec_max_w_kg": 3000,
+            "r_i_base_ohms": 0.005,
+            "v_full_cell": 4.2,
+            "v_nom_cell": 3.7,
+            "v_exp_cell": 3.9,
+            "tremblay_exp_rate": 5.5,
+            "tremblay_polarization_coeff": 0.05
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "c_oss_farads": 1.5e-9,
+    "r_ds_on_ohms": 0.001,
+    "nano": {
+        "c_oss_farads": 5e-10,
+        "r_ds_on_ohms": 0.005
+    },
+    "standard": {
+        "c_oss_farads": 1.5e-9,
+        "r_ds_on_ohms": 0.001
+    },
+    "heavy": {
+        "c_oss_farads": 2e-8,
+        "r_ds_on_ohms": 0.0005
+    }
+}
