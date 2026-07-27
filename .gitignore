@@ -1,0 +1,85 @@
+# ==============================================================================
+# AeroEval Gitignore - Strict Repository Whitelist
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Ignore everything in root by default, except allowed root files/directories
+# ------------------------------------------------------------------------------
+/*
+
+# Root files to include
+!/CMakeLists.txt
+!/LICENSE
+!/README.md
+!/.gitignore
+
+# Directories to include
+!/data/
+!/include/
+!/src/
+!/tests/
+!/web_ui/
+
+# ------------------------------------------------------------------------------
+# 2. Rules for data/
+# ------------------------------------------------------------------------------
+data/*
+!data/chemistry_profiles.json
+!data/cots_database.json
+!data/esc_profiles.json
+!data/user_input_example.json
+
+# ------------------------------------------------------------------------------
+# 3. Rules for tests/
+# ------------------------------------------------------------------------------
+tests/*
+!tests/parameter_sweeps.py
+!tests/realistic_test.py
+
+# ------------------------------------------------------------------------------
+# 4. Rules for web_ui/
+# ------------------------------------------------------------------------------
+web_ui/node_modules/
+web_ui/.next/
+web_ui/out/
+web_ui/build/
+web_ui/*.tsbuildinfo
+web_ui/.env*
+web_ui/.vercel
+
+# ------------------------------------------------------------------------------
+# 5. Compiled Binaries, Build Directories, and OS / IDE Artifacts
+# ------------------------------------------------------------------------------
+build/
+bin/
+obj/
+_deps/
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+
+.vscode/
+.vs/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*~
+*.log
+__pycache__/
+*.pyc

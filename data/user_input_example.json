@@ -1,0 +1,27 @@
+{
+  "evaluate_marketing_limits": true,
+  "payload_kg": 1.0,
+  "max_diameter_m": 1.0,
+  "num_rotors": 4,
+  "v_forward_ms": "auto",
+  "v_climb_ms": 2.0,
+  "t_climb_s": 0,
+  "t_forward_s": 0,
+  "t_hover_s": 600,
+  "altitude_m": 100,
+  "ambient_temp_c": 25,
+  "battery_chemistry": "LiPo",
+  "battery_pack_count": 1,
+  "payload_role": {
+    "type": "imaging",
+    "aux_power_w": 10.0,
+    "added_drag_m2": 0.0,
+    "cg_shift_m": 0.0,
+    "integration_overhead_kg": 0.0
+  },
+  "locks": {
+    "is_prop_locked": false,
+    "is_battery_locked": false,
+    "auto_reduce_flight_time": false
+  }
+}
